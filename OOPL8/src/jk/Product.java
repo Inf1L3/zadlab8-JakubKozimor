@@ -9,8 +9,9 @@ package jk;
  *
  * @author student
  */
-public abstract class Product {
 
+public abstract class Product {
+/*
     private double cena;
     private String nazwa;
     private String opis;
@@ -48,8 +49,9 @@ public abstract class Product {
     public abstract void kup();
 
     public abstract void pokazDane();
-
+*/
     public static void main(String[] args) {
+        /*
         Product[] p = new Product[10];
         p[0] = new Czekolada("czekolada", 1, "fsad");
         p[1] = new Dlugopis("dlugopis", 15, "fsad");
@@ -66,6 +68,33 @@ public abstract class Product {
             p[i].kup();
 
             p[i].pokazDane();
+        }
+
+    }
+*/
+        FiguraGeometryczna[] tab = new FiguraGeometryczna[15];
+
+        tab[0] = new Kwadrat(2);
+        tab[1] = new Kwadrat(4);
+        tab[2] = new Kwadrat(3);
+        tab[3] = new Prostokat(2, 3);
+        tab[4] = new Kolo(2);
+        tab[5] =new Kula(2);
+        tab[6] = new Prostopadloscian(3, 4, 2);
+        tab[7] = new Romb(2, 3);
+        tab[8] = new Kolo(5);
+        tab[9] = new Walec(2, 4);
+        tab[10] = new Rownoleglobok(2, 3, 4);
+        tab[11] = new Prostokat(2,6);
+        tab[12] = new Trojkat(4, 5, 2, 1);
+        tab[13] = new Kwadrat(7);
+        tab[14] = new Kwadrat(5);
+        
+        int i=0;
+        while(i<tab.length)
+        {
+            System.out.println(tab[i].toString());
+            i++;
         }
     }
 }
